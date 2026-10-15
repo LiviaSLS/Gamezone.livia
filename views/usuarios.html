@@ -1,0 +1,198 @@
+<!-- isto é um comentario  -->
+<!-- avisa ao navegador que isso é uma pagina html -->
+<!DOCTYPE html>
+<!-- DEFINE A LINGUAGEM  -->
+<html lang="pt-BR">
+    <!-- ÁREA CONFIGURAÇÃO DO ARQUIVO -->
+    <head>
+        <!-- DEFINE OS CARACTERES UTILIZADOS NA PÁGINA -->
+        <meta charset="UTF-8">
+        <!-- ZERA A ESCALA DE VISUALIZAÇÃO DA PÁGINA -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- DEFINE O TÍTULO DA PÁGINA -->
+        <title>PARTICIPANTES</title>
+         <!-- impostação do css -->
+             <link rel= "stylesheet " href ="../css/style.css">
+    </head>
+    <!-- CONTEÚDO DA PÁGINA -->
+    <body>
+        <!-- CABEÇLHO DO SITE  -->
+        <header>
+            <!-- TAG DO MENU  -->
+             <nav>
+                 <!-- TAG DE LISTAS  -->
+                <!-- LISTA NÃO ORDENADA -->
+               <ul>
+                  <!-- TAG DE ITENS DA LISTA -->
+                   <!-- a  = Links -->
+                     <li>
+                       <a href ="./home.html"> HOME</a>
+                    </li>
+
+                    <li>
+                        <a href = "./informações-dos-jogos.html" >INFORMAÇÕES</a>
+                    </li>
+
+                    <li>
+                       <a href = "./usuarios.html"> USUÁRIOS</a>
+                    </li>
+
+                    <li>
+                       <a href = "./participantes.html"> PARTICIPANTES</a>
+                    </li>   
+             </nav>
+             
+        </header>
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main>
+             <h2 class ="subtitulo"> CADRASTO DE USUÁRIO </h2>
+
+             <!-- FORM - ENGLOBAR TODOS OS CAMPOS DO FORMULÁRIO  -->
+             <form action=""> 
+                 <!-- fieldset - segmenta visualmente o formulario  -->
+                <fieldset>
+                     <!-- legend - titulo daquela área -->
+                     <legend> Dados pessoais </legend>
+                     <!-- input - coleta informações do usuário  -->
+                     <!-- label - suporte visual que indica o que preencher -->
+                     <!-- for - indica para quem o label serve  -->
+                     <!-- id -  identidicador único dos elementos  -->
+
+
+                     <!-- INICIO CAIXINHA NOME  -->
+                     <label for="caixa-nome" > Nome:</label>
+                     <input type = "text" id="caixa-nome">
+                     <!-- FIM CAIXINHA NOME  -->
+
+                    
+                    
+                     <!-- INICIO CAIXINHA IDADE  -->
+                        <label for = "caixa-idade"> Idade: </label>
+                        <input type = "number" id = "caixa-idade " >     
+                            <!-- FIM CAIXINHA IDADE  -->
+                    
+                     
+                    
+                     <!-- INICIO CAIXINHA CPF  -->
+                        <label for = "caixa-cpf"> CPF:</label>
+                        <input type = "number" id = "caixa-cpf " >                    <!-- FIM CAIXINHA IDADE  -->
+                         <!-- FIM CAIXINHA CPF  -->
+                    
+                     
+                    
+                     <!-- INICIO CAIXINHA DATA DE NASCIMENTO   -->
+                        <label for = "caixa-nasc"> Data de nascimento :</label>
+                        <input type = "datetime-local" id = "caixa-nasc " >                    <!-- FIM CAIXINHA IDADE  -->
+                         <!-- FIM CAIXINHA  DATA DE NASCIMENTO  -->
+
+                   
+    
+                </fieldset>
+               
+                <fieldset>
+                    <!-- dados de login  -->
+                    <legend>Dados de login </legend>
+                    <!-- CAIXA DE EMAIL  -->
+                    <label for ="caixa-email"> Email: </label>
+                    <input type = "email" id = "caixa-email " >  
+                    <!-- FIM CAIXA DE EMAIL  -->
+
+                   
+                   
+
+                    <!-- CAIXA DE SENHA  -->
+                    <label for ="caixa-senha"> Senha: </label>
+                    <input type = "password" id = "caixa-senha " >  
+                    <!-- FIM DA CAIXA DE SENHA  -->
+
+                   
+                   
+
+                    <!-- CAIXA DE TITULO -->
+                    <label  for = "caixa-tipo "> Tipo : </label>
+                    <select id = "caixa-tipo" >
+                        <option value = "Ninguém "> SELECIONE </option>
+                        <option value = "Gestor "> Gestor </option>
+                        <option value = "Operador "> Operador </option>
+                    
+
+                    </select>
+                    <!-- FIM CAIXA DE TITULO  -->
+                </fieldset>
+                   
+                   
+                <fieldset>
+                    
+                    <legend>Dados para contato </legend>
+                    <!-- CAIXA DE TELEFONE -->
+                    <label for ="caixa-tel"> Telefone: </label>
+                    <input type = "tel" id = "caixa-tel " >  
+                    <!-- FIM CAIXA DE TELEFONE -->
+
+                   
+                   
+
+                    <!-- CAIXA DE URL -->
+                    <label for ="caixa-url"> URL: </label>
+                    <input type = "url" id = "caixa-url " >  
+                    <!-- FIM DA CAIXA DE URL -->
+
+                   
+                   
+                </fieldset>
+                
+                 <fieldset>
+                    
+                    <legend>Dados para jogo </legend>
+                    <label  for = "caixa-jogo "> Jogo: </label>
+                    <select id = "caixa-tipo" >
+                        <option value = "NADA "> SELECIONE </option>
+                        <option value = "Mobile Legends : Bang Bang "> Mobile Legends : Bang Bang  </option>
+                        <option value = "Fotnite "> Fotnite </option>
+                        <option value = "VALORANT "> Valorant </option>
+                        <option value = "Free Fire "> Free Fire </option>
+                        <option value = "Brawl Stars "> Brawl Stars</option>
+                        <option value = "PUBG "> PUBG </option>
+                        
+                    </select>
+
+                    <label  for = "caixa-jogo "> Modalidade: </label>
+                    <select id = "caixa-tipo" >
+                         <option value = "NADA "> SELECIONE </option>
+                        <option value = "Mobile Legends : Bang Bang ">5X5</option>
+                        <option value = "Fotnite "> 4X4 </option>
+                        <option value = "VALORANT "> 5X5</option>
+                        <option value = "Free Fire "> 4X4 </option>
+                        <option value = "Brawl Stars "> 3X3</option>
+                        <option value = "PUBG "> 4X4 </option>
+                    </select>
+
+                    <label for="caixa-nickname" > Nickname:</label>
+                     <input type = "text" id="caixa-nickname">
+                      </fieldset>
+                
+                    <label  for = "caixa-jogo "> EXPERIÊNCIA: </label>
+                    <select id = "caixa-tipo" >
+                         <option value = "NADA "> SELECIONE </option>
+                        
+                        <option value = "Fotnite "> Lendário  </option>
+                        <option value = "VALORANT ">Avançado</option>
+                        <option value = "Free Fire "> Básico </option>
+                        <option value = "Brawl Stars "> Intermediário</option>
+                        <option value = "PUBG "> Iniciante </option>
+                    </select>
+
+                <!-- submit - envia as informações  -->
+                <button type = "submit" class = "botao">Cadastrar </button>
+                <!-- reset - apaga as informações  -->
+                
+                <button type = "reset " class = "botao">Resetar </button>
+            </form>
+
+        </main>
+        <!-- RODAPÉ DO SITE -->
+        <footer>
+            <strong> Todos os direiros reservados a GAMEZONE. </strong>
+        </footer>
+    </body>
+</html>
